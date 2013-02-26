@@ -1,0 +1,6 @@
+## Interface: 50100
+## Title: oUF_Fabulous
+## Version: 50100.1
+## Dependencies: oUF
+
+files.xml
