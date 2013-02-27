@@ -5,10 +5,10 @@ local config = {
 	statusbar = [[Interface\TargetingFrame\UI-StatusBar]],
 	font = GameFontNormal:GetFont(),
 
-	big = { w = 200, h = 40},
-	normal = { w = 150, h = 40},
-	small = { w = 80, h = 40},
-	tiny = { w = 40, h = 40},
+	big = { width = 200, height = 50, health = 20 / 50, power = 10 / 50},
+	normal = { width = 200, height = 40, health = 30 / 40, power = 10 / 40},
+	small = { width = 80, height = 25, health = 20 / 25, power = 5 / 25},
+	tiny = { width = 30, height = 30, health = 28 / 30, power = 2 / 30},
 
 	type2size = {
 		player = 'big',

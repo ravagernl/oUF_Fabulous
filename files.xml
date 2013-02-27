@@ -2,7 +2,7 @@
 
 	<Script file="config.lua" />
 	<Script file="functions.lua" />
-	<Script file="layoutUnits.lua" />
 	<Script file="layout.lua" />
+	<Script file="layout.player.lua" />
 	<Script file="spawn.lua" />
 </Ui>

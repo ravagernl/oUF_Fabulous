@@ -28,9 +28,9 @@ function ns.SetStatusBarValue(self, cur)
 	self.orig_SetValue(self, cur)
 end
 
-function ns.CreateStatusBar(parent, size, justify, nohook)
+function ns.CreateStatusBar(parent, statusbar, size, justify, nohook)
 	local sb = CreateFrame("StatusBar", nil, parent)
-	sb:SetStatusBarTexture(ns.config.statusbar
+	sb:SetStatusBarTexture(statusbar or ns.config.statusbar
 		or [[Interface\TargetingFrame\UI-StatusBar]])
 	sb:GetStatusBarTexture():SetDrawLayer("BORDER")
 	sb:GetStatusBarTexture():SetHorizTile(false)
