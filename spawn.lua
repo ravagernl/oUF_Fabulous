@@ -1,8 +1,15 @@
 local addonName, ns = ...
 local oUF = oUF
+local pairs = pairs
+local strupper = string.upper
+local strlower = string.lower
 
-oUF:RegisterStyle(addonName, ns.layout)
+local ui = UIParent
+
 oUF:Factory(function(self)
-     self:SetActiveStyle(addonName)
-     self:Spawn("player"):SetPoint("CENTER")
+    local player = self:Spawn('player', addonName..'_player')
+    player:SetPoint('RIGHT', ui, 'BOTTOM', -300, 200)
+
+    local target = self:Spawn('target', addonName..'_target')
+    target:SetPoint('LEFT', ui, 'BOTTOM', 300, 200)
 end)

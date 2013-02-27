@@ -1,12 +1,12 @@
 local addonName, ns = ...
 local oUF = oUF
 
-ns.layoutUnits = {
-	player = function(self)
-		-- Player specific layout code.
+ns.units = {
+	player = function(self, ...)
+		return self
 	end,
 
-    party = function(self)
-		-- Party specific layout code.         
-    end,
+    party = function(self, ...)
+    	return self
+    end
 }
